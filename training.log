@@ -1,0 +1,41 @@
+[I 2024-03-07 18:58:16,824] A new study created in memory with name: no-name-743892f2-de12-4898-8b34-f02ac5bb6122
+[I 2024-03-07 18:58:31,205] Trial 0 finished with value: -0.767148559200014 and parameters: {'max_depth': 3, 'learning_rate': 0.014701414999015505, 'subsample': 0.409242874
+60335773, 'colsample_bytree': 0.4439727111081336}. Best is trial 0 with value: -0.767148559200014.
+[I 2024-03-07 18:58:46,077] Trial 1 finished with value: -0.8398606993378817 and parameters: {'max_depth': 3, 'learning_rate': 0.048589020926756446, 'subsample': 0.48354369
+73428081, 'colsample_bytree': 0.5431668600144373}. Best is trial 1 with value: -0.8398606993378817.
+[I 2024-03-07 18:59:05,984] Trial 2 finished with value: -0.909717654203735 and parameters: {'max_depth': 5, 'learning_rate': 0.08837621024080657, 'subsample': 0.5650095210
+766413, 'colsample_bytree': 0.4067517041586906}. Best is trial 2 with value: -0.909717654203735.
+[I 2024-03-07 18:59:34,063] Trial 3 finished with value: -0.23882667642150027 and parameters: {'max_depth': 6, 'learning_rate': 0.0034163984599662467, 'subsample': 0.676066
+0301632484, 'colsample_bytree': 0.40371739872674883}. Best is trial 2 with value: -0.909717654203735.
+[I 2024-03-07 19:00:03,764] Trial 4 finished with value: -0.9094680917802686 and parameters: {'max_depth': 7, 'learning_rate': 0.0801845044268157, 'subsample': 0.5080373402
+794631, 'colsample_bytree': 0.694436976896711}. Best is trial 2 with value: -0.909717654203735.
+[I 2024-03-07 19:00:27,386] Trial 5 finished with value: -0.23882667642150027 and parameters: {'max_depth': 5, 'learning_rate': 0.004510555887185274, 'subsample': 0.5553204
+645804585, 'colsample_bytree': 0.5595792029688013}. Best is trial 2 with value: -0.909717654203735.
+[I 2024-03-07 19:00:53,072] Trial 6 finished with value: -0.8483301189950041 and parameters: {'max_depth': 6, 'learning_rate': 0.022232631533837557, 'subsample': 0.45040035
+920624616, 'colsample_bytree': 0.5142399180112908}. Best is trial 2 with value: -0.909717654203735.
+[I 2024-03-07 19:01:18,013] Trial 7 finished with value: -0.9170713935971504 and parameters: {'max_depth': 6, 'learning_rate': 0.09354884998152069, 'subsample': 0.488535887
+6258246, 'colsample_bytree': 0.5807009540319448}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:01:48,505] Trial 8 finished with value: -0.9051676578090453 and parameters: {'max_depth': 7, 'learning_rate': 0.062010860311874375, 'subsample': 0.51464567
+41677744, 'colsample_bytree': 0.696016539011715}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:02:06,347] Trial 9 finished with value: -0.8913360254012993 and parameters: {'max_depth': 4, 'learning_rate': 0.08574437604426473, 'subsample': 0.511686806
+8214229, 'colsample_bytree': 0.5139154959791706}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:02:34,209] Trial 10 finished with value: -0.893031890625851 and parameters: {'max_depth': 6, 'learning_rate': 0.05857730947916915, 'subsample': 0.621589196
+8615621, 'colsample_bytree': 0.6169021401718716}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:02:56,096] Trial 11 finished with value: -0.9152696850853183 and parameters: {'max_depth': 5, 'learning_rate': 0.09902449473119646, 'subsample': 0.57712454
+05480043, 'colsample_bytree': 0.6182283081821199}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:03:18,324] Trial 12 finished with value: -0.9106815991134946 and parameters: {'max_depth': 5, 'learning_rate': 0.09648499142546116, 'subsample': 0.60718970
+78302383, 'colsample_bytree': 0.6289424345823131}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:03:37,222] Trial 13 finished with value: -0.8804488182684587 and parameters: {'max_depth': 4, 'learning_rate': 0.0725821931243521, 'subsample': 0.605166771
+6020477, 'colsample_bytree': 0.6141272554128739}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:04:00,900] Trial 14 finished with value: -0.9168350953237931 and parameters: {'max_depth': 6, 'learning_rate': 0.09906827564444877, 'subsample': 0.45122846
+49935137, 'colsample_bytree': 0.5904583679594957}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:04:25,662] Trial 15 finished with value: -0.901609491974987 and parameters: {'max_depth': 6, 'learning_rate': 0.0710400361839908, 'subsample': 0.4332626484
+338837, 'colsample_bytree': 0.5758440209798835}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:04:55,703] Trial 16 finished with value: -0.8856012873493668 and parameters: {'max_depth': 7, 'learning_rate': 0.03978273058638286, 'subsample': 0.46415862
+459889773, 'colsample_bytree': 0.6494490164619876}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:05:19,234] Trial 17 finished with value: -0.9163740830761309 and parameters: {'max_depth': 6, 'learning_rate': 0.09880566813753068, 'subsample': 0.40261395
+34255497, 'colsample_bytree': 0.5799229062019331}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:05:37,033] Trial 18 finished with value: -0.8371491258309179 and parameters: {'max_depth': 4, 'learning_rate': 0.03734953413156479, 'subsample': 0.48938280
+696123826, 'colsample_bytree': 0.4885809548853311}. Best is trial 7 with value: -0.9170713935971504.
+[I 2024-03-07 19:06:06,774] Trial 19 finished with value: -0.9152193225265404 and parameters: {'max_depth': 7, 'learning_rate': 0.07644201531236251, 'subsample': 0.53144481
+96183789, 'colsample_bytree': 0.6630914182055537}. Best is trial 7 with value: -0.9170713935971504. 
