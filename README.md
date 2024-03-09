@@ -32,3 +32,14 @@ This assignment is a part of the Applied ML course of my MSc. Data Science Progr
       - test the response from the localhost endpoint
       - closes the flask app using command line
     - In coverage.txt produce the coverage report output of the unit test and integration test using pytest.
+
+## Solutions
+
+1. Unit testing:
+   - I have trained and optimised hyperaparameters for a XGBClassifier instance on the entire training dataset with 5 fold stratified cross validation.
+   - I saved the best fit model and the TfIdfVectoriser instance after fitting both of them on the entire training dataset.
+   - I collected 9 samples of external test data from kaggle to use for the unit tests.
+   - In each of the unit test calls, I randomly choose one sample from that test dataset and check the test.
+   - For `test_threshold_0` and `test_threshold_1` i check the output on results of all the samples.
+   - Screenshot of successful test case runs for `score.py`
+   ![Successful test case runs](images/successful-testcase-run-for-score.png)
