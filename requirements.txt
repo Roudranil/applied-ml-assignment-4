@@ -1,0 +1,7 @@
+numpy
+pandas
+flask
+flask-restful
+pytest
+pytest-cov
+coverage
