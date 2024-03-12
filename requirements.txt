@@ -5,3 +5,7 @@ flask-restful
 pytest
 pytest-cov
 coverage
+nltk
+scikit-learn
+xgboost
+optuna
