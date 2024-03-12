@@ -47,8 +47,8 @@ def score(text: str, model, vectoriser, threshold: float = 0.5) -> Tuple[bool, f
     """Returns the prediction and the propensity score for a text input."""
     x = vectoriser.transform([text])
     probabilities = model.predict_proba(x)
-    propensity = probabilities[0][1]
-    prediction = propensity > threshold
+    propensity = float(probabilities[0][1])
+    prediction = int(propensity > threshold)
     return prediction, propensity
 
 
