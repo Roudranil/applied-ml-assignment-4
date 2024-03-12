@@ -43,3 +43,6 @@ This assignment is a part of the Applied ML course of my MSc. Data Science Progr
    - For `test_threshold_0` and `test_threshold_1` i check the output on results of all the samples.
    - Screenshot of successful test case runs for `score.py`
    ![Successful test case runs](images/successful-testcase-run-for-score.png)
+
+2. Flask app
+   Please refer to [the app README](app/README.md) for more information on the flask app.
