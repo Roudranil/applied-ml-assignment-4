@@ -6,7 +6,7 @@ from typing import Tuple
 import joblib
 from nltk.corpus import stopwords
 
-MODEL_PATH = "../model"
+MODEL_PATH = "/data/cmi/notes/sem-4/applied-ml/assignments/assignment-3/model/"
 
 
 def startstrip(text: str, subtext: str):
