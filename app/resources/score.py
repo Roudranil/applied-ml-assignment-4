@@ -1,6 +1,6 @@
-from flask import json, request, jsonify
+from flask import json, jsonify, request
 from flask_restful import Resource
-from src.score import MODEL_PATH, score, load_model_vectoriser
+from src.score import MODEL_PATH, load_model_vectoriser, score
 
 
 class Score(Resource):

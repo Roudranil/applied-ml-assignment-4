@@ -6,7 +6,10 @@ from typing import Tuple
 import joblib
 from nltk.corpus import stopwords
 
-MODEL_PATH = "/data/cmi/notes/sem-4/applied-ml/assignments/assignment-3/model/"
+from .utils import get_repo_root
+
+project_repo_root = get_repo_root()
+MODEL_PATH = os.path.join(project_repo_root, "model")
 
 
 def startstrip(text: str, subtext: str):
@@ -43,7 +46,7 @@ def load_model_vectoriser(model_path: str):
     return model, vectoriser
 
 
-def score(text: str, model, vectoriser, threshold: float = 0.5) -> Tuple[bool, float]:
+def score(text: str, model, vectoriser, threshold: float = 0.5) -> Tuple[int, float]:
     """Returns the prediction and the propensity score for a text input."""
     x = vectoriser.transform([text])
     probabilities = model.predict_proba(x)

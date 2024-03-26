@@ -1,12 +1,23 @@
-import unittest
-import subprocess
-import time
-import requests
 import json
+import os
+import subprocess
+
+import sys
+import time
+import unittest
 
 import numpy as np
 import pandas as pd
 import pytest
+import requests
+
+# in order to add the correct path to the system to import score
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from src.score import MODEL_PATH, load_model_vectoriser, score
+from src.utils import get_repo_root
+
+
+DATA_DIR = os.path.join(get_repo_root(), "data")
 
 
 class TestFlaskIntegration(unittest.TestCase):
@@ -15,9 +26,7 @@ class TestFlaskIntegration(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.flask_process = subprocess.Popen(["python", "app.py"])
         time.sleep(10)  # allow for the flask server to start
-        cls.test_dataset = pd.read_csv(
-            "/data/cmi/notes/sem-4/applied-ml/assignments/assignment-3/data/test.csv"
-        )
+        cls.test_dataset = pd.read_csv(os.path.join(DATA_DIR, "test.csv"))
 
     def test_flask(self):
         text = self.test_dataset.loc[
