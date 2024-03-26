@@ -1,11 +1,12 @@
+# basic
 numpy
 pandas
-flask
+optuna
 flask-restful
+flask
 pytest
-pytest-cov
-coverage
+
+# ml
 nltk
 scikit-learn
 xgboost
-optuna
