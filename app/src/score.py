@@ -6,9 +6,9 @@ from typing import Tuple
 import joblib
 from nltk.corpus import stopwords
 
-from .utils import get_repo_root
+from .utils import get_project_root
 
-project_repo_root = get_repo_root()
+project_repo_root = get_project_root()
 MODEL_PATH = os.path.join(project_repo_root, "model")
 
 
