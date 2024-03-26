@@ -14,10 +14,10 @@ import requests
 # in order to add the correct path to the system to import score
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from src.score import MODEL_PATH, load_model_vectoriser, score
-from src.utils import get_repo_root
+from src.utils import get_project_root
 
 
-DATA_DIR = os.path.join(get_repo_root(), "data")
+DATA_DIR = os.path.join(get_project_root(), "data")
 
 
 class TestFlaskIntegration(unittest.TestCase):
