@@ -4,45 +4,35 @@ This assignment is a part of the Applied ML course of my MSc. Data Science Progr
 
 ## Problem statement
 
-1.  Unit testing
-    - In `score.py`, write a function with the following signature that scores a trained model on a text:
-      ```python
-      def score(
-          text: str,
-          model: sklearn.estimator,
-          threshold: float
-      ) -> Tuple[
-          prediction: bool,
-          propensity: float
-      ]
-      ```
-    - In test.py, write a unit test function `test_score(...)` to test the score function. You may reload and use the best model saved during experiment in `train.ipynb` (in joblib/pkl format) for testing the score function. You may consider the following points to construct your test cases:
-      - does the function produce some output without crashing (smoke test)
-      - are the input/output formats/types as expected (format test)
-      - is prediction value 0 or 1
-      - is propensity score between 0 and 1
-      - if you put the threshold to 0 does the prediction always become 1
-      - if you put the threshold to 1 does the prediction always become 0
-      - on an obvious spam input text is the prediction 1
-      - on an obvious non-spam input text is the prediction 0
-2.  Flask serving
-    - In app.py, create a flask endpoint /score that receives a text as a POST request and gives a response in the json format consisting of prediction and propensity
-    - In test.py, write an integration test function test_flask(...) that does the following:
-      - launches the flask app using command line (e.g. use os.system)
-      - test the response from the localhost endpoint
-      - closes the flask app using command line
-    - In coverage.txt produce the coverage report output of the unit test and integration test using pytest.
+Assignment 4: Containerization & Continuous Integration [due 28 Mar 2024]
 
-## Solutions
+1. **Containerization**
+   - create a docker container for the flask app created in Assignment 3
+   - create a Dockerfile which contains the instructions to build the container, which include
+     - installing the dependencies
+     - copying app.py and score.py
+     - launching the app by running “python app.py” upon entry
+   - build the docker image using Dockerfile
+   - run the docker container with appropriate port bindings
+   - in test.py write `test_docker(..)` function which does the following
+     - launches the docker container using commandline (e.g. os.sys(..), docker build and docker run)
+     - sends a request to the localhost endpoint /score (e.g. using requests library) for a sample text
+     - checks if the response is as expected
+     - close the docker container
+   - In coverage.txt, produce the coverage report using pytest for the tests in test.py
+2. **Continuous Integration**
+   - write a pre-commit git hook that will run the `test.py` automatically every time you try to commit the code to your local ‘`main`’ branch
+   - copy and push this pre-commit git hook file to your git repo
 
-1. Unit testing:
-   - I have trained and optimised hyperaparameters for a XGBClassifier instance on the entire training dataset with 5 fold stratified cross validation.
-   - I saved the best fit model and the TfIdfVectoriser instance after fitting both of them on the entire training dataset.
-   - I collected 9 samples of external test data from kaggle to use for the unit tests.
-   - In each of the unit test calls, I randomly choose one sample from that test dataset and check the test.
-   - For `test_threshold_0` and `test_threshold_1` i check the output on results of all the samples.
-   - Screenshot of successful test case runs for `score.py`
-   ![Successful test case runs](images/successful-testcase-run-for-score.png)
 
-2. Flask app
-   Please refer to [the app README](app/README.md) for more information on the flask app.
+## Future guide for installing and running docker on arch (and other linux systems)
+
+1. Download docker engine from the package repositories (for arch, look in aur)
+2. Download docker-buildx from aur
+3. On a terminal session run `sudo dockerd`. In case there are any problems, then reboot and run this command again.
+4. Open a new terminal session and run `sudo chown $USER /var/run/docker.sock`.
+5. Finally run `docker build --network=host -t imagename:tag .`.
+6. To start the container in a detached mode run  
+    `docker run -d --name container_name image_name tail -f /dev/null`
+7. To attach an interactive terminal to the container run  
+    `docker exec -it container_name /bin/bash`
