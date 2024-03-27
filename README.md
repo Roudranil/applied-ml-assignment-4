@@ -1,4 +1,4 @@
-# Testing and model serving
+# Containerization & Continuous Integration
 
 This assignment is a part of the Applied ML course of my MSc. Data Science Program at Chennai Mathematical Institute.
 
@@ -36,3 +36,6 @@ Assignment 4: Containerization & Continuous Integration [due 28 Mar 2024]
     `docker run -d --name container_name image_name tail -f /dev/null`
 7. To attach an interactive terminal to the container run  
     `docker exec -it container_name /bin/bash`
+
+Screenshot of successful test case run inside docker container
+![Successful testcase run inside docker](images/successful-testcase-run-inside-docker.png)
