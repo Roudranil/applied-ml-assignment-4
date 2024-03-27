@@ -7,8 +7,8 @@ def get_repo_root():
 
     Returns
     -------
-    file_path: str
-               The root location of the git repository
+    file_path:  str
+                The root location of the git repository
     """
     file_path = os.path.abspath(__file__)
     while not os.path.exists(os.path.join(file_path, ".git")):
@@ -27,8 +27,8 @@ def get_project_root():
 
     Returns
     -------
-    file_path: str
-               The root location of the project directory
+    file_path:  str
+                The root location of the project directory
     """
     file_path = os.path.abspath(__file__)
     while not os.path.exists(os.path.join(file_path, "README.md")):
@@ -37,6 +37,3 @@ def get_project_root():
         file_path = os.path.dirname(file_path)
 
     return file_path
-
-
-print(get_project_root())
