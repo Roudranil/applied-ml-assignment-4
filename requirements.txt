@@ -5,6 +5,8 @@ optuna
 flask-restful
 flask
 pytest
+pytest-cov
+requests
 
 # ml
 nltk
