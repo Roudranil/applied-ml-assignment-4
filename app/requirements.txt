@@ -1,0 +1,15 @@
+# basic
+numpy
+pandas
+optuna
+flask-restful
+flask
+pytest
+pytest-cov
+requests
+python-dotenv
+
+# ml
+nltk
+scikit-learn
+xgboost
