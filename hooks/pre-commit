@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Check if there are changes in the /app directory
+if git diff --cached --name-only | grep -q "^app/"; then
+    # Change directory to /app
+    cd app || exit
+
+    # Run pytest tests in the testing/ directory
+    pytest testing/
+
+    # Check the exit status of pytest
+    if [ $? -ne 0 ]; then
+        echo "Tests failed. Please fix the failing tests before committing."
+        exit 1  # Stop the commit
+    fi
+else
+    echo "No changes detected in the /app directory. Skipping tests."
+fi
+
+# If all tests pass or no changes in /app, allow the commit to proceed
+exit 0
