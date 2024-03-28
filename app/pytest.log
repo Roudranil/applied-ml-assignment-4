@@ -1,0 +1,53 @@
+2024-03-28 11:50:03,537 - docker_logger - INFO - Deleted shit
+2024-03-28 11:52:08,447 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 11:52:08,465 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 11:52:10,649 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 11:52:48,701 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 11:52:48,721 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 11:52:51,167 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 11:52:51,474 - docker_logger - INFO - Ran container assignment_4_docker_container succesfully.
+2024-03-28 11:52:51,478 - docker_logger - INFO - Loaded test dataset succesfully.
+2024-03-28 11:53:04,205 - docker_logger - INFO - Logged into docker
+2024-03-28 11:55:50,040 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 11:55:50,049 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 11:55:53,160 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 11:56:36,324 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 11:56:36,336 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 11:56:38,536 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 11:58:00,001 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 11:58:00,017 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 11:58:02,152 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 11:58:02,404 - docker_logger - INFO - Ran container assignment_4_docker_container succesfully.
+2024-03-28 11:58:02,406 - docker_logger - INFO - Loaded test dataset succesfully.
+2024-03-28 11:58:12,568 - docker_logger - INFO - Started teardown.
+2024-03-28 11:58:13,114 - docker_logger - INFO - Stopped the container.
+2024-03-28 11:58:13,132 - docker_logger - INFO - Deleted the container.
+2024-03-28 11:58:13,147 - docker_logger - INFO - Deleted the image.
+2024-03-28 12:39:53,296 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 12:39:53,305 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 12:39:55,862 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 12:39:56,041 - docker_logger - INFO - Ran container assignment_4_docker_container succesfully.
+2024-03-28 12:39:56,044 - docker_logger - INFO - Loaded test dataset succesfully.
+2024-03-28 12:40:06,178 - docker_logger - INFO - Started teardown.
+2024-03-28 12:40:06,186 - docker_logger - INFO - Stopped the container.
+2024-03-28 12:40:06,200 - docker_logger - INFO - Deleted the container.
+2024-03-28 12:40:06,211 - docker_logger - INFO - Deleted the image.
+2024-03-28 12:42:32,271 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 12:42:32,279 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 12:42:35,571 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 12:42:35,772 - docker_logger - INFO - Ran container assignment_4_docker_container succesfully.
+2024-03-28 12:42:35,774 - docker_logger - INFO - Loaded test dataset succesfully.
+2024-03-28 12:42:45,887 - docker_logger - INFO - Started teardown.
+2024-03-28 12:42:45,897 - docker_logger - INFO - Stopped the container.
+2024-03-28 12:42:45,953 - docker_logger - INFO - Deleted the container.
+2024-03-28 12:42:45,972 - docker_logger - INFO - Deleted the image.
+2024-03-28 12:49:04,123 - docker_logger - INFO - Deleted assignment_4_docker_container if exists.
+2024-03-28 12:49:04,134 - docker_logger - INFO - Deleted assignment_4_docker_image if exists.
+2024-03-28 12:49:06,154 - docker_logger - INFO - Built image assignment_4_docker_image succesfully.
+2024-03-28 12:49:06,356 - docker_logger - INFO - Ran container assignment_4_docker_container succesfully.
+2024-03-28 12:49:06,358 - docker_logger - INFO - Loaded test dataset succesfully.
+2024-03-28 12:49:16,637 - docker_logger - INFO - Sent request to the app.
+2024-03-28 12:49:16,638 - docker_logger - INFO - Started teardown.
+2024-03-28 12:49:17,060 - docker_logger - INFO - Stopped the container.
+2024-03-28 12:49:17,082 - docker_logger - INFO - Deleted the container.
+2024-03-28 12:49:17,095 - docker_logger - INFO - Deleted the image.
