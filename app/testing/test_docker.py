@@ -7,7 +7,6 @@ import unittest
 import logging
 
 from _pytest.fixtures import pytest_fixture_setup
-import dotenv
 import numpy as np
 import pandas as pd
 import pytest
@@ -25,7 +24,6 @@ formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(messag
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
-env_vars = dotenv.dotenv_values()
 
 DATA_DIR = os.path.join(get_project_root(), "data")
 IMAGE_NAME = "assignment_4_docker_image"
